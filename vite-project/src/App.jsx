@@ -1,7 +1,7 @@
 import './App.css'
-import Footer from './Componant/Footer'
-import Navbar from './Componant/Navbar'
 
+import Navbar from './Components/Navbar'
+import Footer from './Components/Footer'
 function App() {
  
 
@@ -9,6 +9,7 @@ function App() {
     <>
       <Navbar/>
       <Footer/>
+
     </>
   )
 }
