@@ -1,3 +1,49 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.dropdown-toggle::after{
+     display: none;
+}
+
+.overlay{
+     opacity: 0;
+     bottom: 0;
+     width: 100%;
+     background-color: white;
+     transition: opcity 300ms ease-in-out;
+}
+.img-con:hover .overlay{
+     opacity: 1;
+}
+
+.up:hover{
+     margin-top: -10px;
+}
+
+/* interial section*/
+.primary-img:hover{
+     transform:  scale(1.2);
+}
+.primary-img{
+     transition: transform 2s ease-in-out;
+}
+.interior-img{
+     animation: slidup 2s ease-in-out forwards;
+}
+@keyframes slideuep{
+     0%{
+          opacity: 0;
+          transform:  translateY(500px);
+     }
+
+     100%{
+          opacity: 1;
+          transform: translateY(-150px);
+     }
+}
+
+/* className="hover:-ms-[15px] duration-300 ease-in-out"  */
