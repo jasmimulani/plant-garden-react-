@@ -1,13 +1,13 @@
 import './App.css'
+import AllCompo from'./MainPage/AllCompo'
+import Cartmain from './MainPage/Cartmain'
+import Contact2main from './MainPage/Contact2main'
+import Onemain from'./MainPage/Onemain'
+import Fourmain from'./MainPage/Fourmain'
+import Wishlist_main from './MainPage/Wishlist_main'
 
-import Navbar from './Components/Navbar'
-import Footer from './Components/Footer'
-import MainNav from './Components/MainNav'
-import S_Categories from './Components/S_Categories'
-import Header_parts from './Components/Header_parts'
-import Interior from './Components/Interior'
-import FreeShiping from './Components/FreeShiping'
-import Contactfooter from './Components/Contactfooter'
+
+
 
 
 
@@ -16,21 +16,14 @@ function App() {
 
   return (
     <>
-      {/* <Navbar/> */}
-      {/* <MainNav/> */}
-      {/* <Header_parts/> */}
-      {/* <S_Categories/> */}
-      {/* <Interior/> */}
-      <FreeShiping/>
-      {/* <Contactfooter/> */}
-      {/* <Footer /> */}
-      
-      
+    <AllCompo/>
+  <Onemain/>
+  <Fourmain/>
+  < Cartmain/> 
+  <Wishlist_main/>
+  <Contact2main/>
     
-      
-    
-      
-
+  
     </>
   )
 }
