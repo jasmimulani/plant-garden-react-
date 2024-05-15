@@ -1,11 +1,11 @@
 import React from 'react'
 import Container from 'react-bootstrap/esm/Container'
-import visa from '../../assets/visa.svg'
-import webmoney from '../../assets/webmoney.svg'
-import jcb from '../../assets/jcb.svg'
-import discover from '../../assets/discover.svg'
-import exprees from '../../assets/exprees.svg'
-import meastro from '../../assets/meastro.svg'
+import visa from '../assets/visa.svg'
+import webmoney from '../assets/webmoney.svg'
+import jcb from '../assets/jcb.svg'
+import discover from '../assets/discover.svg'
+import exprees from '../assets/exprees.svg'
+import meastro from '../assets/meastro.svg'
 
 
 const Footer1 = () => {
@@ -52,7 +52,7 @@ const Footer1 = () => {
                 <h1 className='font-medium mb-[20px] text-[16px]'>Don't miss Any Update</h1>
                 <p className='text-muted text-[14px] mb-[40px]'>Molestie vitae massa felis, aliquam  lectus at. Ultricies et,quis sit fermentum aliquam et.</p>
 
-                <div class="border-1 border-black flex bg-white">
+                <div className="border-1 border-black flex bg-white">
                   <input type="email" placeholder="Your Email" className=' outline-none text-[15px] w-[100%] ps-[17px] py-[10px]' />
                   <button type='submit' className='bg-black flex justify-end py-[15px] px-[30px]'><img src="	https://emart.wpthemedemos.com/wp-content/themes/emart/assets/images/wht-arrow-right-thin.svg" alt="" className='hover:translate-x-[10px] duration-700 ease-in-out' /></button>
                 </div>

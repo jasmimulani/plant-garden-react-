@@ -1,8 +1,8 @@
 import React from 'react'
 import Container from 'react-bootstrap/esm/Container'
-import heart from'../../assets/heart.svg'
-import Cart from'../../assets/Cart.svg'
-import Eyes from'../../assets/Eyes.svg'
+import heart from'../assets/heart.svg'
+import Cart from'../assets/Cart.svg'
+import Eyes from'../assets/Eyes.svg'
 
 
 const Product1 = () => {

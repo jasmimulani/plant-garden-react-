@@ -26,13 +26,16 @@
 }
 
 /* interial section*/
-.primary-img:hover {
+.primary-img:hover img{
      transform: scale(1.2);
 }
 
-.primary-img {
+.primary-img img{
      transition: transform 2s ease-in-out;
+     
 }
+
+
 
 .interior-img {
      animation: slidup 2s ease-in-out forwards;

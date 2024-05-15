@@ -17,7 +17,7 @@ import{ADD_TO_CART,REMOVE_TO_CART,EMPTY_CART} from'./Constant'
          case REMOVE_TO_CART:
             console.warn('remove creatreducer called',action);
     
-             const UpdatecartRemove = [item.id !== action.data]
+             const UpdatecartRemove = state.filter(item.id !== action.data)
              localStorage.setItem("cart" , JSON.stringify(UpdatecartRemove))
              return UpdatecartRemove
 

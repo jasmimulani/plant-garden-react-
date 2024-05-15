@@ -1,10 +1,10 @@
 import React from 'react'
-import visa from '../../assets/visa.svg'
-import webmoney from '../../assets/webmoney.svg'
-import jcb from '../../assets/jcb.svg'
-import discover from '../../assets/discover.svg'
-import exprees from '../../assets/exprees.svg'
-import meastro from '../../assets/meastro.svg'
+import visa from '../assets/visa.svg'
+import webmoney from '../assets/webmoney.svg'
+import jcb from '../assets/jcb.svg'
+import discover from '../assets/discover.svg'
+import exprees from '../assets/exprees.svg'
+import meastro from '../assets/meastro.svg'
 const Contactfooter = () => {
   return (
     <div>

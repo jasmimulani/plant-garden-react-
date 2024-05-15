@@ -1,8 +1,8 @@
 import React from 'react'
 import Container from 'react-bootstrap/esm/Container'
-import heart from '../../assets/heart.svg'
-import Cart from '../../assets/Cart.svg'
-import Eyes from '../../assets/Eyes.svg'
+import heart from '../assets/heart.svg'
+import Cart from '../assets/Cart.svg'
+import Eyes from '../assets/Eyes.svg'
 
 
 const FourProduct = () => {
@@ -15,16 +15,16 @@ const FourProduct = () => {
           </Container>
         </div>
       </div>
-      <section className='max-md:block max-md:w-[100%] max-md:p-0 my-[80px] container'>
+      <section className='max-md:block max-md:w-[100%] max-md:p-0 my-[80px] container '>
         <div className='flex flex-wrap m-auto col-xs-block relative'>
 
-          <div className="col-6 col-md-3 relative p-2 ">
-         < div className='absolute right-5  top-5 z-10 max-md:hidden'>
+          <div className="col-6 col-md-3 relative p-2">
+         < div className='absolute right-5  top-5 z-10 max-md:hidden '>
               <span className='text-white bg-black px-2 '>-12%</span>
             </div>
               <div className="relative primary-img">
                 <div className='overflow-hidden relative'>
-                <img decoding='async' alt='custom-image' className="primary-img" src='https://emart.wpthemedemos.com/plant-garden/wp-content/uploads/sites/10/2022/12/Monstera.webp' />
+                <img decoding='async' alt='custom-image' className="primary-img " src='https://emart.wpthemedemos.com/plant-garden/wp-content/uploads/sites/10/2022/12/Monstera.webp' />
                 </div>
                 <div className='absolute bottom-0  z-10 w-[100%] h-[100%] shop-icon'>
                 <div className='flex justify-center absolute bottom-[10px] w-[100%]'>

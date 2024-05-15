@@ -1,13 +1,13 @@
 import React from 'react'
-import printrest from '../../assets/printrest.svg'
-import instagram from '../../assets/instagram.svg'
-import fb from '../../assets/fb.svg'
-import visa from'../../assets/visa.svg'
-import webmoney from'../../assets/webmoney.svg'
-import meastro from '../../assets/meastro.svg'
-import jcb from '../../assets/jcb.svg'
-import discover from '../../assets/discover.svg'
-import exprees from'../../assets/exprees.svg'
+import printrest from '../assets/printrest.svg'
+import instagram from '../assets/instagram.svg'
+import fb from '../assets/fb.svg'
+import visa from'../assets/visa.svg'
+import webmoney from'../assets/webmoney.svg'
+import meastro from '../assets/meastro.svg'
+import jcb from '../assets/jcb.svg'
+import discover from '../assets/discover.svg'
+import exprees from'../assets/exprees.svg'
 
 
 function Footer() {

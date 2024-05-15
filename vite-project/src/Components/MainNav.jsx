@@ -3,8 +3,13 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import { NavLink } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 function OffcanvasExample() {
+  const result = useSelector((state) => state.reducer);
+  console.warn("headrcalled",result);
+
   return (
     <>
       {['xl'].map((expand) => (
@@ -46,12 +51,22 @@ function OffcanvasExample() {
                           </div>
                           <div>
                             <p className='text-[22px] pt-[10px] mb-[8px] pb-[4px]'>New Product on the Market</p>
-                            <p className='text-muted text-[15px] font-bold text-muted add'>Shop Now</p>
+                            <p className='text-muted text-[15px] font-bold text-muted add'>
+                              <NavLink to='/ShopNow'>
+                              Shop Now
+                              </NavLink>
+                              </p>
                           </div>
                         </div>
 
                         <div className='leading-8 max-xl:leading-6 py-[60px] pl-[120px] pr-2 max-xl:m-0 max-xl:my-0 gmax-xl:border-0 max-xl:p-0 max-xl:pl-0'>
-                          <NavDropdown.Item href="#action3" className='text-muted py-[8px] text-[18px] animated-text'>Fashion Hub</NavDropdown.Item>
+
+                          <NavDropdown.Item href="#action3" className='text-muted py-[8px] text-[18px] animated-text'>
+                            linFashion Hub
+                            </NavDropdown.Item>
+
+
+
                           <NavDropdown.Item href="#action4" className='text-muted py-[8px] text-[18px] animated-text'>Kid's wear</NavDropdown.Item>
                           <NavDropdown.Item href="#action5" className='text-muted py-[8px] text-[18px] animated-text'>Women fashion</NavDropdown.Item>
                           <NavDropdown.Item href="#action5" className='text-muted py-[8px] text-[18px] animated-text'>Big fashion</NavDropdown.Item>
@@ -61,7 +76,17 @@ function OffcanvasExample() {
 
                         <div className='bg-[#c7c8cb] w-[1px] -mt-[23px] -mb-[16px] ml-10 max-xl:hidden'></div>
                         <div className='py-[50px] pl-[100px] max-xl:p-0 leading-8 max-xl:leading-6 pr-[1px] max-xl:pl-0'>
-                          <NavDropdown.Item href="#action3" className='text-muted py-[8px] text-[18px] animated-text'>Plant garden</NavDropdown.Item>
+
+
+                          <NavDropdown.Item href="#action3" className='text-muted py-[8px] text-[18px] animated-text'>
+                           <NavLink to='/'>
+                            Plant garden
+                           </NavLink>
+                            </NavDropdown.Item>
+
+
+
+
                           <NavDropdown.Item href="#action4" className='text-muted py-[8px] text-[18px] animated-text'>Kid's Toys</NavDropdown.Item>
                           <NavDropdown.Item href="#action5" className='text-muted py-[8px] text-[18px] animated-text'>Electroinc Gadget</NavDropdown.Item>
                           <NavDropdown.Item href="#action5" className='text-muted py-[8px] text-[18px] animated-text'>Bathroom</NavDropdown.Item>
@@ -129,10 +154,18 @@ function OffcanvasExample() {
                             <img width="45" height="45" src="https://emart.wpthemedemos.com/plant-garden/wp-content/uploads/sites/10/2023/03/dress-02.png" alt="" loading="lazy" />
                           </div>
                           <NavDropdown.Item href="#action3" className='font-bold py-[8px] text-[19px] '>Product Styles</NavDropdown.Item>
-                          <NavDropdown.Item href="#action4" className='text-muted py-[8px] text-[18px] animated-text'>Style One</NavDropdown.Item>
+                          <NavDropdown.Item href="#action4" className='text-muted py-[8px] text-[18px] animated-text'>
+                            <NavLink to='/StyleOne'>
+                            Style One
+                            </NavLink>
+                            </NavDropdown.Item>
                           <NavDropdown.Item href="#action5" className='text-muted py-[8px] text-[18px] animated-text'>Style Two</NavDropdown.Item>
                           <NavDropdown.Item href="#action5" className='text-muted py-[8px] text-[18px] animated-text'>Style Three</NavDropdown.Item>
-                          <NavDropdown.Item href="#action5" className='text-muted py-[8px] text-[18px] animated-text'>Style four</NavDropdown.Item>
+                          <NavDropdown.Item href="#action5" className='text-muted py-[8px] text-[18px] animated-text'>
+                            <NavLink to='/StyleFour'>
+                            Style four
+                            </NavLink>
+                            </NavDropdown.Item>
                         </div>
                         <div className='bg-[#c7c8cb] w-[1px] -mt-[8px] ml-10 max-xl:hidden'></div>
 
@@ -196,9 +229,18 @@ function OffcanvasExample() {
                           <div className='mt-[20px]'>
 
                             <NavDropdown.Item href="#action38" className='font-bold py-[8px] text-[19px] '> Shop Pages </NavDropdown.Item>
-                            <NavDropdown.Item href="#action39" className='text-muted py-[8px] text-[18px] animated-text'>  Wishlist</NavDropdown.Item>
-                            <NavDropdown.Item href="#action40" className='text-muted py-[8px] text-[18px] animated-text'> Cart</NavDropdown.Item>
-                            <NavDropdown.Item href="#action41" className='text-muted py-[8px] text-[18px] animated-text'> Checkout</NavDropdown.Item>
+                            <NavDropdown.Item href="#action39" className='text-muted py-[8px] text-[18px] animated-text'>
+                              <NavLink to='/WishList'>
+                                Wishlist
+                              </NavLink>
+                              </NavDropdown.Item>
+                            <NavDropdown.Item href="#action40" className='text-muted py-[8px] text-[18px] animated-text'>
+                              <NavLink to='/Cart'>
+                               Cart
+                              </NavLink>
+                               </NavDropdown.Item>
+                            <NavDropdown.Item href="#action41" className='text-muted py-[8px] text-[18px] animated-text'>
+                               Checkout   </NavDropdown.Item>
                           </div>
                         </div>
 
@@ -257,7 +299,11 @@ function OffcanvasExample() {
                     <NavDropdown.Item href="#action3" className='text-muted py-[8px] text-[18px] animated-text'>Default Blog</NavDropdown.Item>
                     <NavDropdown.Item href="#action4" className='text-muted py-[8px] text-[18px] animated-text'>Blog One</NavDropdown.Item>
                     <NavDropdown.Item href="#action5" className='text-muted py-[8px] text-[18px] animated-text'>Blog Two</NavDropdown.Item>
-                    <NavDropdown.Item href="#action5" className='text-muted py-[8px] text-[18px] animated-text'>Blog Three</NavDropdown.Item>
+                    <NavDropdown.Item href="#action5" className='text-muted py-[8px] text-[18px] animated-text'>
+                      <NavLink to='/BlogThree'>
+                        Blog Three
+                        </NavLink>
+                    </NavDropdown.Item>
                   </NavDropdown>
 
                   {/* contact */}
@@ -271,7 +317,12 @@ function OffcanvasExample() {
                   >
 
                     <NavDropdown.Item href="#action3" className='text-muted py-[8px] text-[18px] animated-text'>Contact One</NavDropdown.Item>
-                    <NavDropdown.Item href="#action4" className='text-muted py-[8px] text-[18px] animated-text'>Contact Two</NavDropdown.Item>
+                    <NavDropdown.Item href="#action4" className='text-muted py-[8px] text-[18px] animated-text'>
+                      <NavLink to='/Contact'>
+
+                      Contact Two
+                      </NavLink>
+                      </NavDropdown.Item>
 
                   </NavDropdown>
                 </Nav>
@@ -297,14 +348,17 @@ function OffcanvasExample() {
                   </a>
                 </div>
 
-                <div className='flex max-md:-mr-2 ml-2  '>
-                  <a href="" className='flex pr-[20px]'>
-                    <span>
+                  <div className='flex max-md:-mr-2 ml-2 max-xl:pr-0 pr-2'>
+                    <NavLink to='/Cart'>
+                      <span className='flex'>
                       <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 26 26" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="feather feather-shopping-bag"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
-                    </span>
-                    <span className='-mt-4 font-semibold'>0</span>
-                  </a>
-                </div>
+                <span className='-mt-4 font-semibold'>{result.length}</span>
+                      </span>
+
+                    </NavLink>
+
+                  </div>
+
               </div>
             </Nav>
           </Container>
