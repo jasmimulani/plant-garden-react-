@@ -39,7 +39,7 @@ const FourProduct = () => {
                     </a>
                   </div>
                   <div className='p-[12px] flex justify-center bg-white m-1  rounded-full icon-1'>
-                    <a href="">
+                    <a href="">  
                       <img src={Cart} alt="" height={8} width={12} />
                     </a>
                   </div>

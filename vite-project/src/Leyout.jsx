@@ -3,24 +3,27 @@ import AllCompo from'./MainPage/AllCompo'
 import OneProduct from'./MainPage/OneProduct'
 import ShopNow from'./MainPage/ShopNow'
 import { BrowserRouter,Routes,Route } from 'react-router-dom'
-import FourProduct from './MainPage/FourProduct'
-import Wishlist1 from './MainPage/Wishlist1'
+import FourProduct from './MainPage/FourProduct'   
+import Wishlist from './MainPage/Wishlist'
 import Cart from './MainPage/Cart'
 import BlogThree from './MainPage/BlogThree'
+import Contact2 from './MainPage/Contact2'
 
 
 const Leyout = () => {
     return (
         <>
+        
          <BrowserRouter>
-        <Routes>
+        <Routes> 
           <Route path='/' element={<AllCompo/>}/>
           <Route path='/StyleOne' element={<OneProduct/>}/>
           <Route path='/StyleFour' element={<FourProduct/>}/>
-           <Route path='/WishList' element={<Wishlist1/>}/>
+           <Route path='/WishList' element={<Wishlist/>}/>
           <Route path='/Cart' element={<Cart/>}/>
            <Route path='/ShopNow' element={<ShopNow/>}/>
            <Route path='/BlogThree' element={<BlogThree/>}/>
+           <Route path='/Contact' element={<Contact2/>}/>
         </Routes>
         </BrowserRouter>       
          </>
@@ -29,3 +32,5 @@ const Leyout = () => {
 }
 
 export default Leyout
+
+

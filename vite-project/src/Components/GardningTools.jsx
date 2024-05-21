@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
-import {Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const GardningTools = () => {
   return (
@@ -18,13 +18,13 @@ const GardningTools = () => {
                       <span className='text-wrap flex'>gardening tools on best price</span>
                     </div>
                   </h1>
-                  <a href=''>
-                    <Link to='/ShopNow'>
-                  <button className='py-[12px] px-[40px] border-1 border-black font-semibold hover:bg-black hover:text-white hover:-translate-y-[20px] duration-300 easy-in-out'>
-                     ShopNow
-                    </button>
-                    </Link>
-                  </a>
+                  <Link to='/ShopNow'>
+                    <a href=''>
+                      <button className='py-[12px] px-[40px] border-1 border-black font-semibold  bg-white hover:bg-black hover:text-white hover:-translate-y-[20px] duration-300 easy-in-out'>
+                        ShopNow
+                      </button>
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>

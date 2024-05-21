@@ -12,4 +12,4 @@ middleware:() => [sagaMiddlewere]
 })
 sagaMiddlewere.run(productsaga)
 
-export default store
+export default store 
