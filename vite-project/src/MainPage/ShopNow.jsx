@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import Container from 'react-bootstrap/esm/Container'
 import Form from 'react-bootstrap/Form';
 import { useDispatch, useSelector } from 'react-redux';
-import { addTocart } from '../ProductData/Redux/Action'
+import { addTocart, addwishlist } from '../ProductData/Redux/Action'
 import { productData } from '../ProductData/ProdutRedux/ProductAction'
 import heart from '../assets/heart.svg'
 import Cart from '../assets/Cart.svg'
@@ -14,7 +14,6 @@ const ShopNow = () => {
   const dispatch = useDispatch()
   const data = useSelector((state) => state.productReducer)
   console.log("maindata called", data);
-
 
   useEffect(() => {
     dispatch(productData())
@@ -31,12 +30,12 @@ const ShopNow = () => {
             <span><a href=''>Shop</a></span>
           </div>
 
-          <section className='flex justify-between items-center'>
+          <section className='flex justify-between items-center mt-[20px]'>
             <div>
               <span className='text-muted'>Showing all 11 result</span>
             </div>
-            <div className='flex'>
-              <div className='col'>
+            <div className='flex row items-center'>
+              <div className='col-3'>
                 <button className='flex'>Filters<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" className="result-icon"><g fill="none" fillRule="evenodd"><path d="M0 0h24v24H0z" opacity="0.05"></path><path fill="currentColor" d="M3.749 7.508a.75.75 0 010-1.5h3.138a2.247 2.247 0 014.243 0h9.121a.75.75 0 010 1.5h-9.126a2.248 2.248 0 01-4.232 0H3.749zm13.373 9h3.129a.75.75 0 010 1.5h-3.135a2.247 2.247 0 01-4.231 0H3.749a.75.75 0 010-1.5h9.13a2.248 2.248 0 014.243 0z"></path></g></svg></button>
               </div>
               <div className='flex col-6'>
@@ -57,7 +56,7 @@ const ShopNow = () => {
           </section>
 
           <div className='flex justify-between row flex-wrap mt-[100px]'>
-            {data.flat().map((item) => {
+            {data.flat().map((item) =>{
               return (
                 <>
                   <div key={item.id} className='col-6 col-lg-3 relative'>
@@ -71,9 +70,10 @@ const ShopNow = () => {
                       <div className='absolute left-0 top-0 z-1 shop-icon'>
                         <div className='p-4'>
                           <div className='p-[12px] bg-white rounded-full m-2 flex justify-center icon-1'>
-                            <a href='' className=''>
+                            <button onClick={() => dispatch(addwishlist(item.id))}>
+                              
                               <img src={heart} alt="" height={16} width={16} />
-                            </a>
+                            </button>
                           </div>
                           <div className='p-[12px] bg-white rounded-full m-2 flex justify-center icon-1'>
                             <a href="">
@@ -92,8 +92,8 @@ const ShopNow = () => {
                     </div >
                     <h5>{item.name}</h5>
                     <p className='text-muted '>
-                      <del className='pr-[8px]'>{item.price}</del>
-                      <span>{item.d_price}</span>
+                      <del className='pr-[8px]'>{item.d_price}</del>
+                      <span>{item.price}</span>
                     </p>
                   </div>
                 </>

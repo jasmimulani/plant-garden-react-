@@ -1,4 +1,3 @@
-import { data } from 'autoprefixer';
 import{ADD_TO_CART,REMOVE_TO_CART,EMPTY_CART, ADD_WISHLIST, REMOVE_WISHLIST, EMPTY_WISHLIST} from'./Constant'
 
   export const addTocart =(data) =>{
@@ -25,7 +24,7 @@ import{ADD_TO_CART,REMOVE_TO_CART,EMPTY_CART, ADD_WISHLIST, REMOVE_WISHLIST, EMP
     }
   } 
 
-  export const addwishlist=(data) =>{
+  export const addwishlist =(data) =>{
     console.warn('add wishlist called',data);
     return{
       type:ADD_WISHLIST,

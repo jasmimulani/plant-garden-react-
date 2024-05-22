@@ -1,8 +1,8 @@
-import React, { useCallback } from 'react'
+import React from 'react'
 import { Container } from 'react-bootstrap'
-import { useSelector } from 'react-redux'
+import { useSelector ,useDispatch } from 'react-redux'
 import { useState } from 'react'
-import axios from 'axios'
+import{removeTocart} from'../ProductData/Redux/Action'
 
 const Cart = () => {
   const [quantity, setQuantity] = useState(1)
@@ -15,31 +15,17 @@ const Cart = () => {
       setQuantity(prevCount => prevCount +1)
     
   }
- const deletecartitem = (e,cart_id) => {
-  e.preventDefault();
-  console.log(cart_id);
- }
 
-  // const thisCliced = e.currentTarget;
-  // thisCliced.innerText ='removing';
+   const dispatch = useDispatch();
 
-  // axios.delete(`/api/delete.cartitem/${cart_id}`).then(res =>{
-  //     if(res.data.status === 200)
-  //       {
-  //               console.warn('success'.res.data.message,'success');
-  //               thisCliced.closest('tr').remove();
-  //     }
-  //     else if(res.data.status ===404)
-  //       {
-  //         console.warn('error'.res.data.message,'error');
-  //         thisCliced.innerText='remove'
-
-  //     }
-  // })
-
-//  }
   const CartData = useSelector((state) => state.reducer)
+
   const amount = CartData.length && CartData.map((item) => item.d_price).reduce((prev, next) => prev + next)
+
+
+
+
+
   return (
     <div className=' bg-gradient-to-1 from-[#e8f3fc] to-[#f8fafc]'>
       <Container className='py-[50px]'>
@@ -69,6 +55,7 @@ const Cart = () => {
                 <div key={item.id}>
                   <div className="flex justify-betweenpt-[30px] items-center py-[30px] ">
                     <div className="flex col-6 items-center pl-[20px]">
+                    <button  onClick={() => dispatch(removeTocart(item.id))} className='btn brtn-denger btn-sm'>Remove</button>
                       <img
                         className="h-32  w-32 col-6"
                         src={item.img}
@@ -82,8 +69,6 @@ const Cart = () => {
                       <button onClick={handleIncrement} className="mx-[10px]"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="feather feather-plus"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></button>
                     </div>
                     <div className="col-2">$123</div>
-                    <button  onClick={(e) => deletecartitem (e,item.id)}
-                    className='btn brtn-denger btn-sm'>Remove</button>
                   </div>
                   <hr />
                 </div> 

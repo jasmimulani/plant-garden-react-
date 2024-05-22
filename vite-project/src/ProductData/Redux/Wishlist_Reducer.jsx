@@ -1,4 +1,3 @@
-import React from 'react'
 import { ADD_WISHLIST } from './Constant'
 
  const getwishlistDataFromLocalstorage = () =>{
@@ -13,11 +12,11 @@ const Wishlist_Reducer = (state = getwishlistDataFromLocalstorage(),action) => {
     case ADD_WISHLIST:
         // console.warn('add wishlist called',action);
         const updatewishlistadd = [action.data, ...state];
+        console.log("wishlistdata" , updatewishlistadd);
         localStorage.setItem('wishlist',JSON.stringify(updatewishlistadd));
-
         return updatewishlistadd;
         
-        default: return state
+        default: return state;
 
   }
  

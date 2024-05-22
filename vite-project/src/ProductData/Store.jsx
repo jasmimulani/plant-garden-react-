@@ -7,6 +7,7 @@ const sagaMiddlewere = createsagaMiddeleware()
 
 const store = configureStore({
 reducer:RootReducer,
+Wishlist_Reducer:RootReducer,
 
 middleware:() => [sagaMiddlewere]
 })
