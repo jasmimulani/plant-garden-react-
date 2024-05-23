@@ -9,3 +9,7 @@ export const PRODUCT_SET ="PRODUCT_SET"
 export const ADD_WISHLIST ='ADD_WISHLIST'
 export const REMOVE_WISHLIST ='REMOVE_WISHLIST'
 export const EMPTY_WISHLIST ='EMPTY_WISHLIST'
+
+export const INCREMENT = 'INCREMENT'
+export const DECREMENT = 'DECREMENT'
+
