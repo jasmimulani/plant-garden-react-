@@ -3,7 +3,7 @@ import { PRODUCT_SET } from "../Redux/Constant";
 import { PRODUCT_LIST } from "../Redux/Constant";
 
 function* getproduct(){
-    let data = yield fetch('http://localhost:3000/Product')
+    let data = yield fetch('http://localhost:5173/Product')
     data = yield data.json()
     console.warn(data);
     yield put({type:PRODUCT_SET,data})

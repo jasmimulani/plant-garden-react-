@@ -15,7 +15,7 @@ const ShopNow = () => {
   console.log("maindata called", data);
 
   useEffect(() => {
-    dispatch(productData())
+    dispatch(productData())  
   },[])
 
   return (
@@ -57,7 +57,7 @@ const ShopNow = () => {
           <div className='flex justify-between row flex-wrap mt-[100px]'>
             {data.flat().map((item) =>{
               return (
-                <>
+                
                   <div key={item.id} className='col-6 col-lg-3 relative'>
                     <div className='absolute right-5 top-3  z-1 max-md:hidden'>
                       <span className='text-white bg-black px-2 '>-33%</span>
@@ -90,7 +90,7 @@ const ShopNow = () => {
                       <span>{item.price}</span>
                     </p>
                   </div>
-                </>
+              
               )
             })}
           </div>

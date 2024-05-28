@@ -11,16 +11,20 @@ import Cart from './MainPage/Cart'
 import BlogThree from './MainPage/BlogThree'
 import Contact2 from './MainPage/Contact2'
 import MainNav from'./Components/MainNav'
+import CheckOut from './MainPage/CheckOut'
+import Login from './MainPage/Login'
 
 
 
 
 function App() {
  
+ 
 
   return (
     <>
     <Navbar/>
+    <Login/>
        <BrowserRouter>
     <MainNav/>
         <Routes> 
@@ -33,9 +37,13 @@ function App() {
           {/* </Route> */}
            <Route path='/BlogThree' element={<BlogThree/>}/>
            <Route path='/Contact' element={<Contact2/>}/>
+           <Route path='/ChekOut' element={<CheckOut/>}/>
+        
         </Routes>
         </BrowserRouter>      
        <Footer/>   
+
+           
     </>
   )
 }

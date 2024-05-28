@@ -28,9 +28,10 @@ const Wishlist_Reducer = (state = getwishlistDataFromLocalstorage(), action) => 
       }
       localStorage.setItem('wishlist', JSON.stringify(updatewishllistData))
       return updatewishllistData
+      
     case REMOVE_WISHLIST:
       const updatewishllistRemove = state.filter(item => item.id !== action.data)
-      localStorage.setItem('wishlidt', JSON.stringify(updatewishllistRemove))
+      localStorage.setItem('wishlist', JSON.stringify(updatewishllistRemove))
       return updatewishllistRemove;
 
 
