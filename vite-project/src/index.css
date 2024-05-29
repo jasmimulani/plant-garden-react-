@@ -5,7 +5,209 @@
 @tailwind components;
 @tailwind utilities;
 
-.dropdown-toggle::after {
+
+
+/*----------------- navbar css------------------ */
+
+* {
+     font-family: "Poppins";
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+   }
+   
+   .dropdown-toggle::after {
+     display: none;
+   }
+   
+   .navbar-toggler-icon {
+     background-size: 50%;
+   }
+   
+   .navbar-toggler {
+     padding: 0 0;
+     border: 0;
+   }
+   
+   .dropdown-menu[data-bs-popper] {
+     --bs-dropdown-border-color: none;
+     --bs-dropdown-padding-y: 0;
+     --bs-dropdown-border-radius: 0;
+   }
+   
+   .dropdown-menu {
+     --bs-dropdown-link-active-bg: none;
+     --bs-dropdown-item-padding-x: 0;
+     --bs-dropdown-link-hover-bg: white;
+   }
+   
+   .dropdown:hover {
+     display: block !important;
+   }
+   
+   .dropdown-toggle::after {
+     display: none !important;
+   }
+   
+   .drop:first-child:hover span svg.arrow {
+     transform: rotate(-180deg);
+     transition: transform 400ms ease-out;
+   }
+   
+   .dropdown-menu {
+     animation: slidedown 400ms ease-in-out forwards;
+   }
+   .navbar-expand-xl .navbar-nav .dropdown-menu{
+     margin-top: 10px;
+   }
+   @keyframes slidedown {
+     0% {
+       opacity: 0;
+       transform: translateY(-60px);
+     }
+   
+     100% {
+       opacity: 1;
+       transform: translateY(0);
+     }
+   }
+
+   /*-------------------- Shop by Categories---------------- */
+.contain-text:hover .hover-text {
+     display: block;
+   }
+   
+   .img-con {
+     position: relative;
+     display: inline-block;
+   }
+   
+   .overlay {
+     position: absolute;
+     opacity: 0;
+     bottom: 0px;
+     width: 100%;
+     background-color: white;
+     transition: opacity 300ms ease-in-out;
+   }
+   
+   .img-con:hover .overlay {
+     opacity: 1;
+   }
+   
+   .up {
+     transition: margin-top 200ms ease-out;
+   }
+   
+   .up:hover{
+     margin-top: -10px;
+   }
+   /*-----------------Interior Plant ---------------*/
+   .primary-img:hover img{
+     transform: scale(1.1);
+   }
+   .primary-img img{
+      transition: transform 1.5s ease-in-out;
+   }
+   
+   .primary-img:hover .shop-icon{
+     opacity: 1;
+   }
+   
+   .interior-img {
+     animation: slideUp 2s ease-in-out forwards;
+   }
+   
+   @keyframes slideUp {
+     0% {
+       opacity: 0;
+       transform: translateY(300px);
+     }
+   
+     100% {
+       opacity: 1;
+       transform: translateY(0);
+     }
+   }
+   
+   .shop-icon{
+     opacity: 0;
+   } 
+    .shop-icon:hover{
+     opacity: 1!important;
+   }
+   .icon-1:hover {
+     background-color: black!important;
+   }
+   .icon-1:hover button{
+     filter: invert(100%) sepia(1);  
+   }
+   /* ---------------Gardening Tools-------------- */
+   .shop-now:hover{
+     background-color: black!important;
+     color: white!important;
+   }
+   .gardening{
+     height: inherit;
+   }
+   .form-select {
+     --bs-form-select-bg-img:none;
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+     padding:0;
+     background-color: none;
+     background-image: none;
+     background-repeat: no-repeat;
+     background-position: right .75rem center;
+     background-size: 16px 12px;
+     border: none;
+     border-radius: none;
+     transition: none;
+   }
+   .form-select:focus {
+     border-color: none;
+     /* outline: 0; */
+     box-shadow: none;
+   }
+   .checkout:hover{
+     background-color: white!important;
+     color: black!important;
+   }
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .dropdown-toggle::after {
      display: none;
 }
 
@@ -26,7 +228,7 @@
 }
 
 /* interial section*/
-.primary-img:hover img{
+/* .primary-img:hover img{
      transform: scale(1.2);
 }
 
@@ -69,4 +271,4 @@
 
 .icon-1:hover a{
      filter:invert(100%) sepia(1);
-}
+}  */

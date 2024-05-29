@@ -7,6 +7,8 @@ import { NavLink } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { useState } from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
+import { CiLogout } from "react-icons/ci";
+
 
 
 function OffcanvasExample() {
@@ -84,10 +86,10 @@ function OffcanvasExample() {
 
                   {/* demo  */}
                   <NavDropdown title={
-                    <div className='flex justify-between items-center drop font-semibold icon max-xl:border-b-[1px] translate-x-[450px] max-xl:translate-x-0'>
+                    <div className='flex justify-between items-center drop font-semibold icon max-xl:border-b-[1px] translate-x-[400px] max-xl:translate-x-0'>
                       Demo<span ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="feather feather-chevron-down arrow"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
                     </div>
-                  } show={demo} onMouseEnter={mouseenter} onMouseLeave={mouseout} className="-translate-x-[450px] max-xl:translate-x-0">
+                  } show={demo} onMouseEnter={mouseenter} onMouseLeave={mouseout} className="-translate-x-[400px] max-xl:translate-x-0">
                     <div className='h-[1px] bg-[#c7c8cb] max-xl:hidden'></div>
                     <section className='flex justify-evenly max-xl:justify-between items-center w-screen h-[400px] max-xl:ml-0 max-xl:w-block max-xl:h-auto m-auto max-xl:border-b-[1px] mt-[12px]'>
                       <div className='flex max-xl:block py-[50px] max-xl:py-0 pl-[50px] max-xl:pl-2 justify-center'>
@@ -111,7 +113,7 @@ function OffcanvasExample() {
                           <NavDropdown.Item href="#action7" className='text-muted py-[8px] text-[18px] hover:translate-x-[13px] duration-300 ease-in-out'> Interior </NavDropdown.Item>
                         </div>
 
-                        <div className='bg-[#c7c8cb] w-[1px] -mt-[-18px] -mb-[-18px] ml-10 max-xl:hidden'></div>
+                         <div className='bg-[#c7c8cb] w-[1px] -mt-[-40px] -mb-[-40px] ml-10 max-xl:hidden'></div>
                         <div className='py-[50px] pl-[80px] pr-[10px] max-xl:p-0 leading-8 max-xl:leading-6'>
                           <NavDropdown.Item href="#action8" className='text-muted py-[8px] text-[18px] hover:translate-x-[13px] duration-300 ease-in-out'>
                             <NavLink to="/">
@@ -124,8 +126,7 @@ function OffcanvasExample() {
                           <NavDropdown.Item href="#action13" className='text-muted py-[8px] text-[18px] hover:translate-x-[13px] duration-300 ease-in-out'> Shoes</NavDropdown.Item>
                           <NavDropdown.Item href="#action14" className='text-muted py-[8px] text-[18px] hover:translate-x-[13px] duration-300 ease-in-out'> Bags</NavDropdown.Item>
                         </div>
-
-                        <div className='bg-[#c7c8cb] w-[1px] -mt-[-18px] -mb-[-18px] ml-10 max-xl:hidden'></div>
+                        <div className='bg-[#c7c8cb] w-[1px] -mt-[-40px] -mb-[-40px] ml-10 max-xl:hidden'></div>
                         <div className='py-[50px] pl-[80px] pr-[10px] max-xl:p-0 leading-8 max-xl:leading-6'>
                           <NavDropdown.Item href="#action15" className='text-muted py-[8px] text-[18px] hover:translate-x-[13px] duration-300 ease-in-out'> Soap </NavDropdown.Item>
                           <NavDropdown.Item href="#action16" className='text-muted py-[8px] text-[18px] hover:translate-x-[13px] duration-300 ease-in-out'> Skin Care</NavDropdown.Item>
@@ -152,25 +153,25 @@ function OffcanvasExample() {
                   </NavDropdown>
                   {/* product */}
                   <NavDropdown title={
-                    <div className='flex justify-between items-center drop font-semibold icon max-xl:border-b-[1px] max-xl:px-0 translate-x-[475px]  max-xl:translate-x-0'>
+                    <div className='flex justify-between items-center drop font-semibold icon max-xl:border-b-[1px] max-xl:px-0 translate-x-[450px]  max-xl:translate-x-0'>
                       Product<span ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="feather feather-chevron-down arrow "><polyline points="6 9 12 15 18 9" className='arrow '></polyline></svg></span>
                     </div>
-                  } show={Product} onMouseOver={Productmouseenter} onMouseLeave={Productmouseout} className='-translate-x-[475px]  max-xl:translate-x-0'>
+                  } show={Product} onMouseOver={Productmouseenter} onMouseLeave={Productmouseout} className='-translate-x-[450px]  max-xl:translate-x-0'>
                     <div className='h-[1px] bg-[#c7c8cb] max-xl:hidden'></div>
                     <section className='w-screen flex max-xl:block items-center  max-xl:m-0 max-xl:w-auto max-xl:leading-6 m-auto max-xl:border-b-[1px] justify-evenly h-[400px]'>
                       <div className='flex max-xl:block'>
                         <div className='max-xl:hidden'>
-                          <div className='py-[50px]  pr-[10px] '>
-                            <img width="250px" height="350px" src="https://emart.wpthemedemos.com/plant-garden/wp-content/uploads/sites/10/2022/12/hover-image-3rd.webp" alt="" loading="lazy" />
-                            <div className='pt-[20px] leading-6'>
+                          <div className='py-[30px]  pr-[5px] pt-10 '>
+                            <img width="220px" height="320px" src="https://emart.wpthemedemos.com/plant-garden/wp-content/uploads/sites/10/2022/12/hover-image-3rd.webp" alt="" loading="lazy" />
+                            <div className='pt-[10px] leading-6'>
                               <p className='text-base'>Each product has a number for <br /> Easy indentification.</p>
                             </div>
                           </div>
                         </div>
-                        <div className='max-xl:hidden'>
-                          <div className='py-[50px]  pr-[20px] pl-[30px]'>
-                            <img width="250px" height="350px" src="https://emart.wpthemedemos.com/plant-garden/wp-content/uploads/sites/10/2022/12/peace-lily-02.webp" alt="peace-lily-02" loading="lazy" />
-                            <div className='pt-[20px] leading-6'>
+                        <div className='max-xl:hidden '>
+                          <div className='py-[30px]  pr-[5px] pl-[30px] pt-10'>
+                            <img width="220px" height="320px" src="https://emart.wpthemedemos.com/plant-garden/wp-content/uploads/sites/10/2022/12/peace-lily-02.webp" alt="peace-lily-02" loading="lazy" />
+                            <div className='pt-[10px] leading-6'>
                               <p className='text-base'>It's just a product of your fevered <br /> imagination!</p>
                             </div>
                           </div>
@@ -228,17 +229,17 @@ function OffcanvasExample() {
 
                   {/* Shop */}
                   <NavDropdown title={
-                    <div className='flex justify-between items-center drop font-semibold icon max-xl:border-b-[1px] translate-x-[600px]  max-xl:translate-x-0' >
+                    <div className='flex justify-between items-center drop font-semibold icon max-xl:border-b-[1px] translate-x-[550px]  max-xl:translate-x-0' >
                       Shop<span ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="feather feather-chevron-down arrow "><polyline points="6 9 12 15 18 9" className='arrow '></polyline></svg></span>
                     </div>
-                  } show={Shop} onMouseEnter={Shopmouseenter} onMouseLeave={Shoptmouseout} className='-translate-x-[600px] max-xl:translate-x-0'>
+                  } show={Shop} onMouseEnter={Shopmouseenter} onMouseLeave={Shoptmouseout} className='-translate-x-[550px] max-xl:translate-x-0'>
 
                     <div className='h-[1px] bg-[#c7c8cb] max-xl:hidden'></div>
                     <section className='flex justify-evenly items-center h-[400px] w-screen max-xl:ml-0 max-xl:w-block max-xl:h-auto m-auto max-xl:border-b-[1px]'>
                       <div className='flex max-xl:block '>
 
                         <div className='max-xl:ml-0  py-[60px] max-xl:p-0 pr-[60px] pl-[40px]'>
-                          <NavDropdown.Item href="#action33" className='font-bold py-[8px] text-[19px] '> Listing Layouts </NavDropdown.Item>
+                          <NavDropdown.Item href="#action33" className='font-bold py-[8px] text-[19px] pt-6'> Listing Layouts </NavDropdown.Item>
                           <NavDropdown.Item href="#action34" className='text-muted py-[8px] text-[18px] hover:translate-x-[13px] duration-300 ease-in-out'> 4 Column</NavDropdown.Item>
                           <NavDropdown.Item href="#action35" className='text-muted py-[8px] text-[18px] hover:translate-x-[13px] duration-300 ease-in-out'> <NavLink to="col_Sidebar"> 4 Column + Side bar</NavLink> </NavDropdown.Item>
                           <NavDropdown.Item href="#action36" className='text-muted py-[8px] text-[18px] hover:translate-x-[13px] duration-300 ease-in-out'> 5 Column </NavDropdown.Item>
@@ -253,27 +254,26 @@ function OffcanvasExample() {
                           </div>
                         </div>
 
-                        <div className='bg-[#c7c8cb] w-[1px] -mt-[-65px] -mb-[-65px] ml-10 max-xl:hidden'></div>
+                        <div className='bg-[#c7c8cb] w-[1px] -mt-[-100px] -mb-[-100px] ml-10 max-xl:hidden'></div>
                         <div className='py-[50px] pl-[80px] pr-[10px] max-xl:p-0 leading-8 max-xl:leading-6'>
-                          <NavDropdown.Item href="#action42" className='font-bold py-[8px] text-[19px]'> Sidebar Widgets </NavDropdown.Item>
+                          <NavDropdown.Item href="#action42" className='font-bold py-[8px] text-[19px] pt-7'> Sidebar Widgets </NavDropdown.Item>
                           <NavDropdown.Item href="#action43" className='text-muted py-[8px] text-[18px] hover:translate-x-[13px] duration-300 ease-in-out'>  Product Filter at Top</NavDropdown.Item>
                           <NavDropdown.Item href="#action44" className='text-muted py-[8px] text-[18px] hover:translate-x-[13px] duration-300 ease-in-out'>  Product Filter at Left</NavDropdown.Item>
                           <NavDropdown.Item href="#action45" className='text-muted py-[8px] text-[18px] hover:translate-x-[13px] duration-300 ease-in-out'> Product Filter at Right</NavDropdown.Item>
                         </div>
-
-                        <div className='bg-[#c7c8cb] w-[1px] -mt-[-65px] -mb-[-65px] ml-10 max-xl:hidden'></div>
+                        <div className='bg-[#c7c8cb] w-[1px] -mt-[-100px] -mb-[-100px] ml-10 max-xl:hidden'></div>
                         <div className='py-[50px] pl-[80px] pr-[10px] max-xl:p-0 leading-8 max-xl:leading-6'>
-                          <NavDropdown.Item href="#action46" className='font-bold py-[8px] text-[19px]'> Shop Box styles</NavDropdown.Item>
+                          <NavDropdown.Item href="#action46" className='font-bold py-[8px] text-[19px] pt-7'> Shop Box styles</NavDropdown.Item>
                           <NavDropdown.Item href="#action47" className='text-muted py-[8px] text-[18px] hover:translate-x-[13px] duration-300 ease-in-out'>  Shop Style One</NavDropdown.Item>
                           <NavDropdown.Item href="#action48" className='text-muted py-[8px] text-[18px] hover:translate-x-[13px] duration-300 ease-in-out'>  Shop Style Two</NavDropdown.Item>
                           <NavDropdown.Item href="#action49" className='text-muted py-[8px] text-[18px] hover:translate-x-[13px] duration-300 ease-in-out'> Shop Style Three</NavDropdown.Item>
                           <NavDropdown.Item href="#action51" className='text-muted py-[8px] text-[18px] hover:translate-x-[13px] duration-300 ease-in-out'> Shop Style Four</NavDropdown.Item>
                         </div>
 
-                        <div className='bg-[#c7c8cb] w-[1px] -mt-[-65px] -mb-[-65px] ml-10 max-xl:hidden'></div>
+                        <div className='bg-[#c7c8cb] w-[1px] -mt-[-100px] -mb-[-100px] ml-10 max-xl:hidden'></div>
                         <div className='py-[50px] pl-[80px] pr-[10px] max-xl:p-0 leading-8 max-xl:leading-6'>
-                          <div className='relative '>
-                            <img width="360px" height="450px" src="https://emart.wpthemedemos.com/plant-garden/wp-content/uploads/sites/10/2023/03/New-Project.webp" className="attachment-large size-large wp-image-279" alt="" loading="lazy" />
+                          <div className='relative pt-10 pb-5'>
+                            <img width="300px" height="400px" src="https://emart.wpthemedemos.com/plant-garden/wp-content/uploads/sites/10/2023/03/New-Project.webp" className="attachment-large size-large wp-image-279" alt="" loading="lazy" />
                             <div className='absolute text-3xl text-white -my-[225px] ml-[40px] tracking-winder'>
                               <p>On The Weekend</p>
                             </div>
@@ -341,8 +341,10 @@ function OffcanvasExample() {
                   <div className='max-xl:pr-0 ml-2  pr-2'>
                     {isAuthenticated && <span className='max-lg:hidden'> {user.name}</span>} 
                     {isAuthenticated ? (<button  onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 26 26" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="feather feather-user">
-                          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    {/* <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 26 26" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="feather feather-user">
+                          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg> */}
+                          <CiLogout />
+
                     </button>
 
                     ) : (
