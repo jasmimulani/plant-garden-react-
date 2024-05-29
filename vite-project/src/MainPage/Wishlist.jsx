@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
 import { useSelector, useDispatch } from 'react-redux'
-import { addTocart, removewishlist, emptywishlist } from '../ProductData/Redux/Action';
+import { addTocart, removewishlist, emptywishlist} from '../ProductData/Redux/Action';
 import { NavLink } from 'react-router-dom';
 
 const Wishlist = () => {
@@ -43,43 +43,66 @@ const Wishlist = () => {
           </div>
         )}
         <div className="flex container mx-auto justify-between max-xl:block">
-          <div className="w-[65%] text-center table-fix bg-white mx-auto max-xl:w-[100%] p-[20px]">
+          <div className="w-[100%] text-center table-fix bg-white mx-auto p-[20px]">
+            <hr />
             <div>
-              <button onClick={() => dispatch(emptywishlist())} className="hover:-translate-y-[10px] duration-300 ease-in-out p-3">
-                <a href=""
-                  className="text-white py-[13px] px-[30px] bg-black text-[17px] " >
-                  Empty WishList
-                </a>
-              </button>
-              <div className="flex row justify-between pb-[20px] pt-[30px] px-[20px]">
-                <div className="col-4 font-normal">Product Name</div>
-                <div className="col-3 font-normal ">Unit Price</div>
-                <div className="col-2 font-normal">Date Added</div>
-                <div className="col-3 font-normal"></div>
+              <div className="flex justify-between pb-[20px] pt-[20px] px-[20px] max-md:justify-center">
+                <div className="col-4 font-medium max-md:w-[100%]">Products Name</div>
+                <div className="col-3 font-medium max-md:hidden  ">Unit Price</div>
+                <div className="Col-2 font-medium max-md:hidden">Date Added</div>
+                <div className="col-3 font-medium max-md:hidden"></div>
               </div>
             </div>
             <hr />
             {wishlist.map((item) => {
               return (
+                // <div key={item.id}>
+                //   <div className='flex justify-between pt-[30px] items-center py-[30px] text-gray-500'>
+                //     <div className='flex col-4 items-center pl-[20px]'>
+                //       <button onClick={() => Removelist(item)} className='btn btn-denger btn-sm'> Remove </button>
+                //       <img className='h-24 w-24 col-2' src={item.img} alt="" />
+                //       <div className='col-6'>{item.name} </div>
+                //     </div>
+                //     <div className='col-2'>
+                //       <span>{item.d_price}</span>
+                //     </div>
+                //     <p className='text-[#666666] text-[16px]'>{date.toDateString()}</p>
+                //     <div className=" col-2 hover:-translate-y-[10px] duration-300 ease-in-out">
+                //       <button className="text-white py-[10px] px-[10px] bg-black text-[17px]" onClick={() => ADDcart(item)} >
+                //         Add To Cart
+                //       </button>
+                //     </div>
+                //   </div>
+                //   <hr />
+                // </div>
                 <div key={item.id}>
-                  <div className='flex justify-between pt-[30px] items-center py-[30px] text-gray-500'>
-                    <div className='flex col-4 items-center pl-[20px]'>
-                      <button onClick={() => Removelist(item)} className='btn btn-denger btn-sm'> Remove </button>
-                      <img className='h-24 w-24 col-2' src={item.img} alt="" />
-                      <div className='col-6'>{item.name} </div>
-                    </div>
-                    <div className='col-2'>
-                      <span>{item.d_price}</span>
-                    </div>
-                    <p className='text-[#666666] text-[16px]'>{date.toDateString()}</p>
-                    <div className=" col-2 hover:-translate-y-[10px] duration-300 ease-in-out">
-                      <button className="text-white py-[10px] px-[10px] bg-black text-[17px]" onClick={() => ADDcart(item)} >
-                        Add To Cart
+                  <div className="flex justify-between items-center py-[20px] text-gray-500 max-md:block max-md:leading-10">
+
+                    <div className="flex col-4 pl-[15px] max-lg:p-0 max-md:block max-md:w-auto max-md:leading-10 items-center">
+                      <button onClick={() => Removelist(item)} className="flex max-md:justify-start max-md:px-[8px] max-md:pb-[15px]">
+                        Remove
                       </button>
+                      <img className="h-28  w-28 col-2 ml-[15px] max-lg:h-20 max-lg:w-20 max-md:m-0" src={item.img} alt="" />
+                      <div className="col-6 max-md:w-auto flex max-md:justify-start ml-[10px] max-md:m-0 text-wrap">{item.name}</div>
                     </div>
+
+                    <div className="col-3 flex text-wrap justify-center max-md:w-auto max-md:justify-start">
+                      <del className="pr-[12px]">{item.d_price}</del>
+                      <span>{item.price}-20%</span>
+                    </div>
+
+                    <div className="col-2 items-center flex justify-center text-wrap max-md:w-auto max-md:justify-start">
+                      {date.toDateString()}
+                    </div>
+
+                    <button className=" col-3 hover:-translate-y-[10px] duration-300 ease-in-out max-md:w-[100%] flex justify-center text-white py-[12px] px-[30px] bg-black text-[17px]  max-lg:py-[5px] checkout hover:border-2 hover:border-black" onClick={() => ADDcart(item)}>
+                      Add To Cart
+                    </button>
+
                   </div>
                   <hr />
                 </div>
+
               )
             })}
           </div>

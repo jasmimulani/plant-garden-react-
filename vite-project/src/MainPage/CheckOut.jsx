@@ -29,7 +29,7 @@ const CheckOut = () => {
         </div>
         
          )} */}
-        <div className='px-[100px] max-md:px-[200px]'>
+        <div className='px-[100px] max-xl:p-0'>
           <div className='bg-white p-[20px] max-md:p-[15px] mb-[12px] text-[#565656] shadow-2xl shodow-gray-700'>
             <span>Returning Customer? Click here to login</span>
           </div>
@@ -37,7 +37,7 @@ const CheckOut = () => {
             <span>Have a Coupon ?  Click hwrw to enter ypur code</span>
           </div>
           <div className='flex justify-between max-xl:block '>
-            <div className='w-[63%] bg-white shadow-2xl shadow-gray-500 max-xl-w[100%] p-4'>
+            <div className='w-[63%] bg-white shadow-2xl shadow-gray-500 max-xl:w[100%] p-4 '>
               <h1 className='text-[22px] mb-[12px]'> Billing Detalis</h1>
               
               <div className='flex justify-between max-xl:block'>
