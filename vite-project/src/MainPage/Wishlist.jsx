@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
 import { useSelector, useDispatch } from 'react-redux'
-import { addTocart, removewishlist, emptywishlist} from '../ProductData/Redux/Action';
+import { addTocart, removewishlist} from '../ProductData/Redux/Action';
 import { NavLink } from 'react-router-dom';
 
 const Wishlist = () => {
