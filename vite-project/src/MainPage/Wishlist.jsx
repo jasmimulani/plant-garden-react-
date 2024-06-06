@@ -7,8 +7,7 @@ import { NavLink } from 'react-router-dom';
 const Wishlist = () => {
 
   const dispatch = useDispatch();
-
-
+    
   const wishlist = useSelector((state) => state.Wishlist_Reducer)
 
   let date = new Date()
@@ -17,7 +16,7 @@ const Wishlist = () => {
     dispatch(removewishlist(item.id))
   }
   const ADDcart = (item) => {
-    dispatch(addTocart(item))
+    dispatch(addTocart(item))  
     dispatch(removewishlist(item.id))
   }
 

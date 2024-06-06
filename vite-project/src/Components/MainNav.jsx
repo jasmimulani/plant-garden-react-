@@ -9,10 +9,7 @@ import { useState } from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
 import { CiLogout } from "react-icons/ci";
 
-
-
 function OffcanvasExample() {
-
 
   const { user, loginWithRedirect, isAuthenticated, logout } = useAuth0();
 
@@ -354,7 +351,6 @@ function OffcanvasExample() {
                       </button>             
                     )
                     }
-
                   </div>
              
                 <div className='max-xl:hidden ml-2 flex  max-xl:pr-0 pr-2 '>
