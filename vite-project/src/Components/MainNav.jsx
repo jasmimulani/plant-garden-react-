@@ -236,7 +236,7 @@ function OffcanvasExample() {
                       <div className='flex max-xl:block '>
 
                         <div className='max-xl:ml-0  py-[60px] max-xl:p-0 pr-[60px] pl-[40px]'>
-                          <NavDropdown.Item href="#action33" className='font-bold py-[8px] text-[19px] pt-6'> Listing Layouts </NavDropdown.Item>
+                          <NavDropdown.Item href="#action33" className='font-bold py-[8px] text-[19px] pt-8'> Listing Layouts </NavDropdown.Item>
                           <NavDropdown.Item href="#action34" className='text-muted py-[8px] text-[18px] hover:translate-x-[13px] duration-300 ease-in-out'> 4 Column</NavDropdown.Item>
                           <NavDropdown.Item href="#action35" className='text-muted py-[8px] text-[18px] hover:translate-x-[13px] duration-300 ease-in-out'> <NavLink to="col_Sidebar"> 4 Column + Side bar</NavLink> </NavDropdown.Item>
                           <NavDropdown.Item href="#action36" className='text-muted py-[8px] text-[18px] hover:translate-x-[13px] duration-300 ease-in-out'> 5 Column </NavDropdown.Item>
@@ -253,14 +253,14 @@ function OffcanvasExample() {
 
                         <div className='bg-[#c7c8cb] w-[1px] -mt-[-100px] -mb-[-100px] ml-10 max-xl:hidden'></div>
                         <div className='py-[50px] pl-[80px] pr-[10px] max-xl:p-0 leading-8 max-xl:leading-6'>
-                          <NavDropdown.Item href="#action42" className='font-bold py-[8px] text-[19px] pt-7'> Sidebar Widgets </NavDropdown.Item>
+                          <NavDropdown.Item href="#action42" className='font-bold py-[8px] text-[19px] pt-9'> Sidebar Widgets </NavDropdown.Item>
                           <NavDropdown.Item href="#action43" className='text-muted py-[8px] text-[18px] hover:translate-x-[13px] duration-300 ease-in-out'>  Product Filter at Top</NavDropdown.Item>
                           <NavDropdown.Item href="#action44" className='text-muted py-[8px] text-[18px] hover:translate-x-[13px] duration-300 ease-in-out'>  Product Filter at Left</NavDropdown.Item>
                           <NavDropdown.Item href="#action45" className='text-muted py-[8px] text-[18px] hover:translate-x-[13px] duration-300 ease-in-out'> Product Filter at Right</NavDropdown.Item>
                         </div>
                         <div className='bg-[#c7c8cb] w-[1px] -mt-[-100px] -mb-[-100px] ml-10 max-xl:hidden'></div>
                         <div className='py-[50px] pl-[80px] pr-[10px] max-xl:p-0 leading-8 max-xl:leading-6'>
-                          <NavDropdown.Item href="#action46" className='font-bold py-[8px] text-[19px] pt-7'> Shop Box styles</NavDropdown.Item>
+                          <NavDropdown.Item href="#action46" className='font-bold py-[8px] text-[19px] pt-9'> Shop Box styles</NavDropdown.Item>
                           <NavDropdown.Item href="#action47" className='text-muted py-[8px] text-[18px] hover:translate-x-[13px] duration-300 ease-in-out'>  Shop Style One</NavDropdown.Item>
                           <NavDropdown.Item href="#action48" className='text-muted py-[8px] text-[18px] hover:translate-x-[13px] duration-300 ease-in-out'>  Shop Style Two</NavDropdown.Item>
                           <NavDropdown.Item href="#action49" className='text-muted py-[8px] text-[18px] hover:translate-x-[13px] duration-300 ease-in-out'> Shop Style Three</NavDropdown.Item>

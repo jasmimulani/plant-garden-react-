@@ -1,5 +1,6 @@
 import{ADD_TO_CART,REMOVE_TO_CART,EMPTY_CART, ADD_WISHLIST, REMOVE_WISHLIST, EMPTY_WISHLIST, INCREMENT, DECREMENT} from'./Constant'
 
+
   export const addTocart =(data) =>{
     console.warn("add to cart called",data);
     return{

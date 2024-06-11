@@ -5,6 +5,8 @@ import { removeTocart, emptycart } from '../ProductData/Redux/Action'
 import { increment } from '../ProductData/Redux/Action'
 import { decrement } from '../ProductData/Redux/Action'
 import { NavLink } from 'react-router-dom'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Cart = () => {
 
@@ -16,6 +18,15 @@ const Cart = () => {
   const totalamount = CartData.reduce((total, item) => total + (item.price * item.quntity), 0);
 
   const finalamount = totalamount
+
+  const RemovetoCart = (item) =>{
+    dispatch(removeTocart(item.id)),
+    toast.success("Remove Cart successfull ",{
+      position:"bottom-left",
+       theme:"dark"
+    });
+  }
+  
 
 
   return (
@@ -62,7 +73,7 @@ const Cart = () => {
                 <div key={item.id}>
                   <div className="flex justify-betweenpt-[30px] items-center py-[30px] ">
                     <div className="flex col-6 items-center pl-[20px]">
-                      <button onClick={() => dispatch(removeTocart(item.id))} className='btn btn-denger btn-sm'>Remove</button>
+                      <button onClick={() =>RemovetoCart(item)} className='btn btn-denger btn-sm'>Remove</button>
                       <img
                         className="h-32  w-32 col-6"
                         src={item.img}
@@ -122,6 +133,8 @@ const Cart = () => {
           </div>
         </div>
       </Container>
+     <ToastContainer/>
+      
     </div>
   )
 }

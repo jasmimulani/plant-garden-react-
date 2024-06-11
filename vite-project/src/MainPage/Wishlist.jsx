@@ -3,6 +3,8 @@ import { Container } from 'react-bootstrap'
 import { useSelector, useDispatch } from 'react-redux'
 import { addTocart, removewishlist} from '../ProductData/Redux/Action';
 import { NavLink } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Wishlist = () => {
 
@@ -13,11 +15,21 @@ const Wishlist = () => {
   let date = new Date()
 
   const Removelist = (item) => {
-    dispatch(removewishlist(item.id))
+    dispatch(removewishlist(item.id)),
+    toast.success("Remove wishlist successfull ",{
+      position:"bottom-left",
+       theme:"dark"
+    });
+
   }
   const ADDcart = (item) => {
     dispatch(addTocart(item))  
-    dispatch(removewishlist(item.id))
+    dispatch(removewishlist(item.id)),
+    toast.success(" Add To Cart successfull",{
+      position:'bottom-left',
+       theme:"dark"
+    })
+    
   }
 
   return (
@@ -84,6 +96,7 @@ const Wishlist = () => {
                       <img className="h-28  w-28 col-2 ml-[15px] max-lg:h-20 max-lg:w-20 max-md:m-0" src={item.img} alt="" />
                       <div className="col-6 max-md:w-auto flex max-md:justify-start ml-[10px] max-md:m-0 text-wrap">{item.name}</div>
                     </div>
+                    
 
                     <div className="col-3 flex text-wrap justify-center max-md:w-auto max-md:justify-start">
                       <del className="pr-[12px]">{item.d_price}</del>
@@ -107,6 +120,7 @@ const Wishlist = () => {
           </div>
         </div>
       </Container>
+        <ToastContainer/>
     </div>
   );
 };

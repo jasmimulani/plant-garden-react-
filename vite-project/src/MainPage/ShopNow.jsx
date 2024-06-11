@@ -7,12 +7,32 @@ import { productData } from '../ProductData/ProdutRedux/ProductAction'
 import heart from '../assets/heart.svg'
 import Cart from '../assets/Cart.svg'
 import Eyes from '../assets/Eyes.svg'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const ShopNow = () => {
   const dispatch = useDispatch()
   const data = useSelector((state) => state.productReducer)
-  console.log("maindata called", data);
+
+  const CartData = (item) =>{
+    dispatch(addTocart(item));
+    toast.success("add To cartsuccessfull ",{
+        position:"bottom-left",
+         theme:"dark"
+      });
+  }
+
+    const wishlistData =(item) =>{
+        dispatch(addwishlist(item));
+        toast.success("add wishlist successfull ",{
+            position:"bottom-left",
+             theme:"dark"
+          });
+
+    }
+
+
 
   useEffect(() => {
     dispatch(productData())  
@@ -69,14 +89,14 @@ const ShopNow = () => {
                       <div className='absolute left-0 top-0 z-1 shop-icon'>
                         <div className='p-4'>
                           <div className='p-[12px] bg-white rounded-full m-2 flex justify-center icon-1'>
-                            <button onClick={() => dispatch(addwishlist(item))}>
+                            <button onClick={() => wishlistData(item)}>
                               <img src={heart} alt="" height={16} width={16} />
                             </button>
                           </div>
                           <div className='p-[12px] bg-white rounded-full m-2 flex justify-center icon-1'>
                               <img src={Eyes} alt="" height={16} width={16} />
                           </div>
-                          <div className='p-[12px] flex justify-center bg-white m-2  rounded-full icon-1 ' onClick={() => dispatch(addTocart(item))}>
+                          <div className='p-[12px] flex justify-center bg-white m-2  rounded-full icon-1 ' onClick={() =>  CartData (item)}>
                               <img src={Cart} alt="" height={8} width={12} />
                           </div>
                         </div>
@@ -96,6 +116,7 @@ const ShopNow = () => {
           </div>
         </div>
       </Container>
+      <ToastContainer/>
     </div>
     </>
 
