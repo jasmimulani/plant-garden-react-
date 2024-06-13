@@ -61,12 +61,11 @@ function OffcanvasExample() {
     setContact(false)
   }
 
-
   return (
     <>
 
-      <div className='flex justify-center bg-white'>
-        <Navbar collapseOnSelect expand="xl" className="flex items-center z-10  justify-between  bg-white w-[100vw]">
+      <div className='flex justify-center bg-white  sticky top-0 z-10'>
+        <Navbar collapseOnSelect expand="xl" className="flex items-center justify-between z-1 bg-white w-[100vw]">
           <Container fluid className='flex justify-between container w-screen'>
             <Navbar.Brand href="#home" className='max-xl:order-2'>
               <NavLink to="/">
@@ -123,14 +122,14 @@ function OffcanvasExample() {
                           <NavDropdown.Item href="#action13" className='text-muted py-[8px] text-[18px] hover:translate-x-[13px] duration-300 ease-in-out'> Shoes</NavDropdown.Item>
                           <NavDropdown.Item href="#action14" className='text-muted py-[8px] text-[18px] hover:translate-x-[13px] duration-300 ease-in-out'> Bags</NavDropdown.Item>
                         </div>
-                        <div className='bg-[#c7c8cb] w-[1px] -mt-[-40px] -mb-[-40px] ml-10 max-xl:hidden'></div>
+                        <div className='bg-[#c7c8cb] w-[1px] -mt-[-40px] -mb-[-40px]  max-xl:hidden'></div>
                         <div className='py-[50px] pl-[80px] pr-[10px] max-xl:p-0 leading-8 max-xl:leading-6'>
                           <NavDropdown.Item href="#action15" className='text-muted py-[8px] text-[18px] hover:translate-x-[13px] duration-300 ease-in-out'> Soap </NavDropdown.Item>
                           <NavDropdown.Item href="#action16" className='text-muted py-[8px] text-[18px] hover:translate-x-[13px] duration-300 ease-in-out'> Skin Care</NavDropdown.Item>
                           <NavDropdown.Item href="#action17" className='text-muted py-[8px] text-[18px] hover:translate-x-[13px] duration-300 ease-in-out'> Grocery Outlet <span className='text-white bg-red-500 px-2 py-0.3 rounded-full font-medium text-xs ml-[6px]'>New</span></NavDropdown.Item>
 
                           <NavDropdown.Item href="#action18" className='text-muted py-[8px] text-[18px] hover:translate-x-[13px] duration-300 ease-in-out'> Hiking Heaven <span className='text-white bg-red-500 px-2 py-0.3 rounded-full font-medium text-xs ml-[6px]'>New</span></NavDropdown.Item>
-                          <NavDropdown.Item href="#action19" className='text-muted py-[8px] text-[18px] hover:translate-x-[13px] duration-300 ease-in-out'> E xotic Fragrances<span className='text-white bg-red-500 px-2 py-0.3 rounded-full font-medium text-xs ml-[6px]'>New</span></NavDropdown.Item>
+                          <NavDropdown.Item href="#action19" className='text-muted py-[8px] text-[18px] hover:translate-x-[13px] duration-300 ease-in-out pr-4'> E xotic Fragrances<span className='text-white bg-red-500 px-2 py-0.3 rounded-full font-medium text-xs ml-[6px]'>New</span></NavDropdown.Item>
                         </div>
                       </div>
                     </section>
@@ -200,7 +199,7 @@ function OffcanvasExample() {
                           <NavDropdown.Item href="#action28" className='text-muted py-[8px] text-[18px] hover:translate-x-[13px] duration-300 ease-in-out'>Horizontal Style</NavDropdown.Item>
                           <NavDropdown.Item href="#action29" className='text-muted py-[8px] text-[18px] hover:translate-x-[13px] duration-300 ease-in-out'><NavLink to="gridStyle"> Grid Style</NavLink></NavDropdown.Item>
                         </div>
-                        <div className='bg-[#c7c8cb] w-[1px] -mt-[-40px] -mb-[-40px] ml-10 max-xl:hidden'></div>
+                        <div className='bg-[#c7c8cb] w-[1px] -mt-[-40px] -mb-[-40px] ml-3 max-xl:hidden'></div>
                         <div className='py-[50px] pl-[80px] pr-[10px] max-xl:p-0 leading-8 max-xl:leading-6'>
                           <div className='pt-1 pb-7 ml-2 max-xl:hidden'>
                             <img width="48" height="48" src="https://emart.wpthemedemos.com/plant-garden/wp-content/uploads/sites/10/2023/03/chair-1.png" alt="" loading="lazy" />
@@ -242,7 +241,7 @@ function OffcanvasExample() {
                           <NavDropdown.Item href="#action36" className='text-muted py-[8px] text-[18px] hover:translate-x-[13px] duration-300 ease-in-out'> 5 Column </NavDropdown.Item>
                           <NavDropdown.Item href="#action37" className='text-muted py-[8px] text-[18px] hover:translate-x-[13px] duration-300 ease-in-out'> 5 Column + Side bar</NavDropdown.Item>
 
-                          <div className='mt-[20px]'>
+                          <div className='mt-[20px] '>
                             <NavDropdown.Item href="#action38" className='font-bold py-[8px] text-[19px] '> Shop Pages </NavDropdown.Item>
                             <NavDropdown.Item href="#action39" className='text-muted py-[8px] text-[18px] hover:translate-x-[13px] duration-300 ease-in-out'>
                               <NavLink to="/WishList"> Wishlist</NavLink></NavDropdown.Item>

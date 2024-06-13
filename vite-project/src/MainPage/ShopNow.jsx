@@ -17,7 +17,7 @@ const ShopNow = () => {
 
   const CartData = (item) =>{
     dispatch(addTocart(item));
-    toast.success("add To cartsuccessfull ",{
+    toast.success("add To cart successfull ",{
         position:"bottom-left",
          theme:"dark"
       });

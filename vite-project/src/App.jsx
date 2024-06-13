@@ -13,6 +13,7 @@ import Contact2 from './MainPage/Contact2'
 import MainNav from'./Components/MainNav'
 import CheckOut from './MainPage/CheckOut'
 import Login from './MainPage/Login'
+import Error from './MainPage/Error'
 
 
 
@@ -38,6 +39,7 @@ function App() {
            <Route path='/BlogThree' element={<BlogThree/>}/>
            <Route path='/Contact' element={<Contact2/>}/>
            <Route path='/ChekOut' element={<CheckOut/>}/>
+           <Route path='/*' element={<Error/>}/>
         
         </Routes>
         </BrowserRouter>      

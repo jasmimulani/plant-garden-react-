@@ -9,7 +9,7 @@ const S_Categories = () => {
           Shop by Categories
         </h1>
       </div>
-      <section className='flex container'>
+      <section className='flex container '>
         <div className='flex flex-wrap'>
           <div className='col-xl-3 grid overflow-hidden p-3 col-md-6'>
             <div className='overflow-hidden'>

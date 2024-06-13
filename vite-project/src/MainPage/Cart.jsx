@@ -28,7 +28,6 @@ const Cart = () => {
   }
   
 
-
   return (
     <div className=' bg-gradient-to-1 from-[#e8f3fc] to-[#f8fafc]'>
       <Container className='py-[50px]'>

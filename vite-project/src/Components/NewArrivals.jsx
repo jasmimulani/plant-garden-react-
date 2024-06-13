@@ -49,7 +49,7 @@ const NewArrivals = () => {
                                 return (
                                     <>
                                         <div className='col-6 col-lg-3 relative' key={item.id}>
-                                            <div className='absolute right-5 top-3  z-1 max-md:hidden'>
+                                            <div className='absolute right-5 top-3  max-md:hidden'>
                                                 <span className='text-white bg-black px-2 '>{item.discount}</span>
                                             </div>
 
@@ -57,7 +57,7 @@ const NewArrivals = () => {
                                                 <div className='overflow-hidden relative'>
                                                     <img decoding="async" loading="lazy" alt="custom-image" src={item.img} />
                                                 </div>
-                                                <div className='absolute left-0 top-0 z-1 shop-icon'>
+                                                <div className='absolute left-0 top-0 shop-icon'>
                                                     <div className='p-4'>
                                                         <div className='p-[12px] bg-white rounded-full m-2 flex justify-center icon-1'>
                                                             <button onClick={() => wishlistData(item)}>
