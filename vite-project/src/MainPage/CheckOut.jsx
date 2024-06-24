@@ -321,11 +321,23 @@ const CheckOut = () => {
                       support your experience throughout this website, and for
                       other purposes described in our privacy policy.
                     </p>
-                    <button className="w-full">
+                    <NavLink to='/payment'>
+
+                    <button className="w-full mb-[20px]">
                       <div className="w-[100%] hover:-translate-y-[10px] duration-300 ease-in-out max-md:w-[100%] flex justify-center text-white py-[15px] px-[30px] bg-black text-[17px]   checkout hover:border-2 hover:border-black">
                         order Place
                       </div>
                     </button>
+                    </NavLink>
+
+
+                    <NavLink to='/shopNow'>
+                        <button className='w-full'>
+                          <div className='w-[100%] hover:-translate-y-[10px] duration-300 ease-in-out max-md:w-[100%] flex justify-center text-white py-[15px] px-[30px] bg-black text-[17px] checkout hover:border-2 hover:border-black'>
+                            Return To Shop
+                          </div>
+                        </button>
+                      </NavLink>
                   </div>
                 </div>
               </Form>

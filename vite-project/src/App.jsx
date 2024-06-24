@@ -14,6 +14,7 @@ import MainNav from'./Components/MainNav'
 import CheckOut from './MainPage/CheckOut'
 import Login from './MainPage/Login'
 import Error from './MainPage/Error'
+import Success from './MainPage/Success'
 
 
 
@@ -39,6 +40,7 @@ function App() {
            <Route path='/BlogThree' element={<BlogThree/>}/>
            <Route path='/Contact' element={<Contact2/>}/>
            <Route path='/ChekOut' element={<CheckOut/>}/>
+           <Route path='/payment' element={<Success/>}/>
            <Route path='/*' element={<Error/>}/>
         
         </Routes>
