@@ -5,6 +5,7 @@ import success from '../assets/success.png'
 import { NavLink } from 'react-router-dom';
 
 const Success = () => {
+    
     let date = new Date()
     const cartData = useSelector((state) => state.reducer);
 

@@ -6,6 +6,8 @@ import { Provider } from 'react-redux'
 import store from'./ProductData/Store.jsx'
 import { Auth0Provider } from '@auth0/auth0-react'
 
+const uri = 'https://dev-u80dp0ysiq815q8d.us.auth0.com/u/login?state=hKFo2SBSdDYzSWNod1hIa3dvWEpZcndidTRtVjRfbjVJc3lnOaFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIFpxZUVueWdFZ2tqd0xIY1lnajU5WVpxekFTeGE3dk5No2NpZNkgNzVDcGlkeWg1TTBKZVM1WnBaTENTTzd3dHpxVTRQNEk'
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Provider store={store}>
@@ -13,7 +15,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     domain="dev-u80dp0ysiq815q8d.us.auth0.com"
     clientId="75Cpidyh5M0JeS5ZpZLCSO7wtzqU4P4I"
     authorizationParams={{
-      redirect_uri: window.location.origin
+      redirect_uri: {uri}
     }}
   >
     <App />
