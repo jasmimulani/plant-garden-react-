@@ -10,8 +10,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Provider store={store}>
     <Auth0Provider
-      domain="dev-1s4phe7nqz0tvedv.us.auth0.com"
-      clientId="JuLx6cSyxYSiYH88yr1shHz7kwYBrCSc"
+     domain="dev-eng2whc0oi5woca1.us.auth0.com"
+    clientId="rrsxB1BNBWo8OWpYgCV6wN7Uzh9AfY8q"
       authorizationParams={{
         redirect_uri: window.location.origin
     }}
@@ -19,5 +19,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <App />
       </Auth0Provider>
     </Provider>
-  </React.StrictMode>,
+  </React.StrictMode>
 )
