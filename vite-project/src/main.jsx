@@ -6,6 +6,7 @@ import { Provider } from 'react-redux'
 import store from'./ProductData/Store.jsx'
 import { Auth0Provider } from '@auth0/auth0-react'
 
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Provider store={store}>
