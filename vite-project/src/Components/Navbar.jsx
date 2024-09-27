@@ -16,7 +16,7 @@ const Navbar = () => {
             <div className='flex px-3 border-e-2 border-black justify-evenly space-x-4'>
               <span className=' items-center flex'><svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none"><path d="M15.9991 5.44434V16.9999H2.9082V5.44434" stroke="#000A12" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path><path d="M17.4541 1H1.4541V5.44444H17.4541V1Z" stroke="#000A12" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path><path d="M7 9H9.90909" stroke="#000A12" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path></svg> </span>
 
-              <span>DEals of the Day</span>
+              <span>Deals of the Day</span>
             </div>
             <div className='flex px-3 justify-evenly space-x-4'>
               <span className=' items-center flex'><svg xmlns="http://www.w3.org/2000/svg" width="15" height="18" viewBox="0 0 15 18" fill="none"><path d="M14.0909 7.54545C14.0909 12.6364 7.54546 17 7.54546 17C7.54546 17 1 12.6364 1 7.54545C1 5.80949 1.68961 4.14463 2.91712 2.91712C4.14463 1.68961 5.80949 1 7.54546 1C9.28142 1 10.9463 1.68961 12.1738 2.91712C13.4013 4.14463 14.0909 5.80949 14.0909 7.54545Z" stroke="#000A12" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path><path d="M7.5451 9.72716C8.75008 9.72716 9.72692 8.75033 9.72692 7.54534C9.72692 6.34036 8.75008 5.36353 7.5451 5.36353C6.34011 5.36353 5.36328 6.34036 5.36328 7.54534C5.36328 8.75033 6.34011 9.72716 7.5451 9.72716Z" stroke="#000A12" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path></svg> </span>

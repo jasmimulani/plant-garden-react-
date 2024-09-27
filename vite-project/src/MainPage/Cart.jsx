@@ -16,12 +16,18 @@ const Cart = () => {
   const dispatch = useDispatch();
 
 
-  const totalamount = CartData.reduce((total, item) => total + (item.price * item.quntity), 0);
+  // const totalamount = CartData.reduce((total, item) => total + (item.price * item.quntity), 0);
 
-  const finalamount = totalamount +10
+  // const finalamount = totalamount +10
 
-  const ShippingRate = 1500-finalamount
+  // const ShippingRate = 1500-finalamount
 
+  const ProductAmount = CartData.reduce((total,item)=> total + item.price * item.quntity,0)
+
+  const shippingCost = 10; 
+  const freeShipping = 1500;
+  const FinalTotal = ProductAmount + shippingCost;
+  const ShippingRate = Math.max(freeShipping -FinalTotal,0);
 
   const RemovetoCart = (item) =>{
     dispatch(removeTocart(item.id)),
@@ -111,7 +117,7 @@ const Cart = () => {
                 <hr />
                 <div className="flex justify-between mt-[30px] mb-[20px]">
                   <span>Subtotal</span>
-                  <span>${totalamount}</span>
+                  <span>${ProductAmount}</span>
                 </div>
                 <hr />
                 <div className="leading-10 my-[15px]">
@@ -128,7 +134,7 @@ const Cart = () => {
                 <hr />
                 <div className="flex justify-between my-[25px]">
                   <span>Total:</span>
-                  <span>${finalamount}</span>
+                  <span>${FinalTotal}</span>
                 </div>
                 <NavLink to='/checkout'>
                 <div className="w-full py-[15px] text-center border-2 border-black hover:-translate-y-[15px] duration-300 ease-in-out bg-black text-white checkout">

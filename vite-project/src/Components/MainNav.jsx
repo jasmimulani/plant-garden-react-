@@ -100,7 +100,7 @@ function OffcanvasExample() {
                           </div>
                         </div>
 
-                        <div className='leading-8 max-xl:leading-6 py-[60px] pl-[80px] pr-2 max-xl:m-0 max-xl:my-0 max-xl:border-0 max-xl:p-0 max-xl:pl-0'>
+                        <div className='leading-8 max-xl:leading-6 py-[60px] pl-[80px] pr-1 max-xl:m-0 max-xl:my-0 max-xl:border-0 max-xl:p-0 max-xl:pl-0'>
                           <NavDropdown.Item href="#action2" className='text-muted py-[8px] text-[18px] hover:translate-x-[13px] duration-300 ease-in-out'> Fashion Hub </NavDropdown.Item>
                           <NavDropdown.Item href="#action3" className='text-muted py-[8px] text-[18px] hover:translate-x-[13px] duration-300 ease-in-out'> Kids Wear </NavDropdown.Item>
                           <NavDropdown.Item href="#action4" className='text-muted py-[8px] text-[18px] hover:translate-x-[13px] duration-300 ease-in-out leading-0'>Women <br className='max-xl:hidden ' /> Fashion </NavDropdown.Item>
@@ -129,7 +129,7 @@ function OffcanvasExample() {
                           <NavDropdown.Item href="#action17" className='text-muted py-[8px] text-[18px] hover:translate-x-[13px] duration-300 ease-in-out'> Grocery Outlet <span className='text-white bg-red-500 px-2 py-0.3 rounded-full font-medium text-xs ml-[6px]'>New</span></NavDropdown.Item>
 
                           <NavDropdown.Item href="#action18" className='text-muted py-[8px] text-[18px] hover:translate-x-[13px] duration-300 ease-in-out'> Hiking Heaven <span className='text-white bg-red-500 px-2 py-0.3 rounded-full font-medium text-xs ml-[6px]'>New</span></NavDropdown.Item>
-                          <NavDropdown.Item href="#action19" className='text-muted py-[8px] text-[18px] hover:translate-x-[13px] duration-300 ease-in-out pr-4'> E xotic Fragrances<span className='text-white bg-red-500 px-2 py-0.3 rounded-full font-medium text-xs ml-[6px]'>New</span></NavDropdown.Item>
+                          <NavDropdown.Item href="#action19" className='text-muted py-[8px] text-[18px] hover:translate-x-[13px] duration-300 ease-in-out pr-4'> Exotic Fragrances<span className='text-white bg-red-500 px-2 py-0.3 rounded-full font-medium text-xs ml-[6px]'>New</span></NavDropdown.Item>
                         </div>
                       </div>
                     </section>
