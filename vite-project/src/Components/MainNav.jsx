@@ -6,12 +6,9 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import { NavLink } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { useState } from 'react';
-import { useAuth0 } from '@auth0/auth0-react';
-import { CiLogout } from "react-icons/ci";
 
 function OffcanvasExample() {
 
-  const { user, loginWithRedirect, isAuthenticated, logout } = useAuth0();
 
   const result = useSelector((state) => state.reducer);
   const WishList = useSelector((state) => state.Wishlist_Reducer)
@@ -335,21 +332,12 @@ function OffcanvasExample() {
                 </div>
 
                   <div className='max-xl:pr-0 ml-2  pr-2'>
-   
-                    {isAuthenticated && <span className='max-lg:hidden p-1'> {user.name}</span>} 
-                    {isAuthenticated ? (<button  onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
-                          <CiLogout />
-
-                    </button>
-
-                    ) : (
-                      <button onClick={() => loginWithRedirect()}>
+                      <button >
                         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 26 26" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="feather feather-user">
                           <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle>
                         </svg>
                       </button>             
-                    )
-                    }
+                    
                   </div>
              
                 <div className='max-xl:hidden ml-2 flex  max-xl:pr-0 pr-2 '>
