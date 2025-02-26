@@ -12,9 +12,12 @@ import BlogThree from './MainPage/BlogThree'
 import Contact2 from './MainPage/Contact2'
 import MainNav from'./Components/MainNav'
 import CheckOut from './MainPage/CheckOut'
-import Login from './MainPage/Login'
 import Error from './MainPage/Error'
 import Success from './MainPage/Success'
+// import loginrender from'./MainPage/loginrender'
+import Login from './MainPage/Login'
+import Signup from './MainPage/Signup'
+
 
 
 
@@ -25,11 +28,12 @@ function App() {
 
   return (
     <>
-    <Navbar/>
-    <Login/>
        <BrowserRouter>
+    <Navbar/>
     <MainNav/>
         <Routes> 
+          <Route path='/Signup' element={<Signup/>}></Route>
+          <Route path='/login' element={ <Login/>}></Route>
           <Route path='/' element={<AllCompo/>}/>
           <Route path='/StyleOne' element={<OneProduct/>}/>
           <Route path='/StyleFour' element={<FourProduct/>}/>
@@ -44,7 +48,7 @@ function App() {
            <Route path='/*' element={<Error/>}/>
         
         </Routes>
-        </BrowserRouter>      
+        </BrowserRouter> 
        <Footer/>   
 
            

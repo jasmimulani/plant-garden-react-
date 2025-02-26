@@ -1,15 +1,10 @@
 import React from 'react'
 
-const Login = () => {
-   
-
-    // console.log("current user",user);
-
-
-
+function Login()  {
+  
   return (
     <div>
-     
+     login
     </div>
   )
 }
