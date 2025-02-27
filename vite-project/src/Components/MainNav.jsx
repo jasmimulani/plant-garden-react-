@@ -331,6 +331,8 @@ function OffcanvasExample() {
                   </a>
                 </div>
 
+   <NavLink to='/login'>
+
                   <div className='max-xl:pr-0 ml-2  pr-2'>
                       <button >
                         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 26 26" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="feather feather-user">
@@ -339,6 +341,7 @@ function OffcanvasExample() {
                       </button>             
                     
                   </div>
+   </NavLink>
              
                 <div className='max-xl:hidden ml-2 flex  max-xl:pr-0 pr-2 '>
                   <NavLink to="/WishList" className='flex '>
