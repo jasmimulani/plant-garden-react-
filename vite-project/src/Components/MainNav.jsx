@@ -331,7 +331,7 @@ function OffcanvasExample() {
                   </a>
                 </div>
 
-   <NavLink to='/login'>
+   <NavLink to='/signup'>
 
                   <div className='max-xl:pr-0 ml-2  pr-2'>
                       <button >
