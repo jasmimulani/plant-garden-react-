@@ -24,9 +24,6 @@ function Login() {
       })
       .catch((err) => console.log(err));
   };
-
-
-
   return (
     <div>
       <div className="d-flex justify-content-center align-items-center bg-sky-50  vh-100">
