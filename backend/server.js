@@ -18,8 +18,8 @@ app.use(express.urlencoded({ extended: true }));
 
 app.post("/signup", (req, res) => {
   EmployeeModel.create(req.body)
-    .then((employees) => res.json(employees))
-    .catch((err) => res.json(err));
+    .then(employees => res.json(employees))
+    .catch(err => res.json(err));
 });
 
 app.post("/login", (req, res) => {
